@@ -36,6 +36,7 @@ export default {
   methods: {
     addTask() {
       this.$store.dispatch("addTask", this.input)
+      this.input = ""
     }
   },
   computed: {
